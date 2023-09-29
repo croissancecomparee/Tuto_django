@@ -20,7 +20,7 @@ class DetailView(generic.DetailView):
     template_name = "polls/detail.html"
 
 
-class results(request, question_id):
+class ResultsView(generic.DetailView):
     model = Question
     template_name = "polls/results.html"
     
